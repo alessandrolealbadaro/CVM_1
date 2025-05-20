@@ -1,8 +1,10 @@
+from pyecore.ecore import EAttribute, EReference, EObject, MetaEClass, EString
+
 class Pessoa(EObject, metaclass=MetaEClass):
 
-    nome_completo = EAttribute(eType=String, unique=True, derived=False, changeable=True)
-    cpf = EAttribute(eType=String, unique=True, derived=False, changeable=True)
-    email = EAttribute(eType=String, unique=True, derived=False, changeable=True)
+    nome_completo = EAttribute(eType=EString, unique=True, derived=False, changeable=True)
+    cpf = EAttribute(eType=EString, unique=True, derived=False, changeable=True)
+    email = EAttribute(eType=EString, unique=True, derived=False, changeable=True)
     endereco = EReference(ordered=False, unique=True, containment=False, derived=False)
 
     def __init__(self, *, nome_completo=None, cpf=None, email=None, endereco=None):

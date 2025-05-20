@@ -1,5 +1,6 @@
 import pyecore.ecore as Ecore
 from pyecore.ecore import *
+from pyecore.ecore import EAttribute, EDate, EFloat, EReference, EObject, MetaEClass  # Added MetaEClass import
 from types import String, Integer
 
 class Pedido(EObject, metaclass=MetaEClass):

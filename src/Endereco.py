@@ -1,3 +1,5 @@
+from pyecore.ecore import EObject, MetaEClass, EAttribute, Integer, String
+
 class Endereco(EObject, metaclass=MetaEClass):
 
     id_endereco = EAttribute(eType=Integer, unique=True, derived=False, changeable=True)

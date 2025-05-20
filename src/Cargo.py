@@ -1,3 +1,5 @@
+from pyecore.ecore import EAttribute, Integer, String, EObject, MetaEClass
+
 class Cargo(EObject, metaclass=MetaEClass):
 
     id_cargo = EAttribute(eType=Integer, unique=True, derived=False, changeable=True)

@@ -2,6 +2,7 @@
 from functools import partial
 import pyecore.ecore as Ecore
 from pyecore.ecore import *
+from pyecore.ecore import EAttribute, EReference, EDate, EFloat, EInt, EString, EObject, MetaEClass, EPackage
 from types import String, Integer
 
 
